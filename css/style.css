@@ -1,0 +1,376 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft JhengHei", "Heiti TC", sans-serif;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1000px; /* Approximate width from image */
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Helper spacing */
+.mt-2 { margin-top: 15px; }
+
+/* Top Bar */
+.top-bar {
+    background: #f0f0f0;
+    text-align: right;
+    padding: 5px 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Header */
+header {
+    background: #e6e6e6; /* Light gray background for header area like in image top part */
+    border-bottom: 5px solid #fff;
+}
+
+.header-container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff; /* The actual nav bar is likely white or transparent on bg */
+    background: linear-gradient(to bottom, #f0f0f0 0%, #ffffff 100%);
+    position: relative;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 1px;
+}
+
+.main-nav a {
+    display: block;
+    background: #eb6100; /* Distinctive orange */
+    color: white;
+    padding: 8px 15px;
+    font-size: 13px;
+    font-weight: bold;
+    border-right: 1px solid #ff8533;
+}
+
+.main-nav a:hover {
+    background: #ff751a;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #f8cdda 0%, #f3b3c3 100%); /* Pink gradient */
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 5px solid #fff;
+}
+
+.hero-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hero-text {
+    padding-left: 50px;
+    color: #d64658; /* Darker pink/red text */
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1;
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+.hero-text p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.hero-visual {
+    flex-grow: 1;
+    position: relative;
+    height: 100%;
+}
+
+/* Abstract graphics to mimic the image */
+.love-sharing-graphic {
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 40px;
+    color: white;
+    transform: rotate(-10deg);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.bottle-graphic {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    width: 80px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d64658;
+}
+
+.floating-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    background: #ffccbc;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Grid Layout */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.grid-item {
+    background: #fff;
+    min-height: 300px;
+    /* border: 1px solid #ccc; */
+}
+
+.section-title {
+    background: #ffe0b2; /* Pale orange bg */
+    color: #e65100;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Column 1: News */
+.highlight-news {
+    border: 3px solid #ff0000;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.highlight-news h2 {
+    color: #ff0000;
+    font-size: 20px;
+    margin: 0;
+}
+
+.news-cta {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 5px;
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.news-list {
+    padding: 0 10px;
+}
+
+.news-list li {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-list .date {
+    color: #ff9800;
+    margin-right: 5px;
+}
+
+/* Column 2: HR */
+.image-card {
+    background: #2196f3;
+    height: 100px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.blue-overlay {
+    padding: 15px;
+}
+
+.blue-overlay h3 {
+    font-family: cursive;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.sub-link {
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    color: #666;
+    border-bottom: 1px solid #eee;
+}
+
+.monthly-cover {
+    background: #1a237e;
+    height: 120px;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    padding-bottom: 5px;
+    font-size: 12px;
+    background-image: linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000), linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    opacity: 0.8;
+}
+
+/* Column 3: ESG */
+.esg-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.esg-card-item {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 10px;
+}
+
+.esg-thumb {
+    background: white;
+    border: 1px solid #eee;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #d64658;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.esg-card-item p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Column 4: IR */
+.ir-content {
+    padding: 0 10px;
+}
+
+.ir-content h3 {
+    color: #c62828;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.ir-content p {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.building-image {
+    background: #ffecb3;
+    height: 100px;
+    position: relative; /* Clip path logic would be great here but complex */
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    border-top: 3px solid #ddd;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #fcfcfc;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left {
+    font-size: 12px;
+    color: #999;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    margin-right: 20px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-links a {
+    background: #e0e0e0; /* Match the pill buttons */
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    color: #666;
+}
